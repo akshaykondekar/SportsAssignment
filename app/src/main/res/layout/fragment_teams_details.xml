@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.TeamsDetailsFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vs" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blur_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+            app:layout_constraintVertical_bias="0.15">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFirstTeamName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Pakistan"
+                android:textAlignment="textEnd"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvVs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="VS"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSecondTeamName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="South Africa"
+                android:textAlignment="textStart"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFirstInning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFirstInning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inning 1st"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFirstTeamScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="203/10"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFirstTeamOvers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overs : 45.5"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFirstTeamRunRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Runrate : 4.42"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llsecondInning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSecondInning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inning 2nd"
+                android:textAlignment="textEnd"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSecondTeamScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="207/5"
+                android:textAlignment="textEnd"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSecondTeamOvers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Overs : 42.0"
+                android:textAlignment="textEnd"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSecondTeamRunRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Runrate : 4.92"
+                android:textAlignment="textEnd"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSquadTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="---------- Squad ----------"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFirstTeamList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rvSecondTeamList"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSquadTitle" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSecondTeamList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rvFirstTeamList"
+            app:layout_constraintTop_toBottomOf="@+id/tvSquadTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

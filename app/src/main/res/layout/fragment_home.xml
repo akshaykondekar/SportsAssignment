@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.HomeFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/vs" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blur_bg" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLeague"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Pakistan tour of South Africa, 2018/19"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSeriesStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd ODI 22-Jan-2019"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLeague" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFirstTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pakistan"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/tvVs"
+            app:layout_constraintEnd_toEndOf="@+id/tvVs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="82dp"
+            android:text="VS"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSeriesStatus" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSecondTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="South Africa"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvVs"
+            app:layout_constraintTop_toBottomOf="@+id/tvVs" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbtnStats"
+            style="@style/Widget.App.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Stats"
+            app:backgroundTint="@color/purple_700"
+            app:icon="@drawable/dashboard"
+            app:iconSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvVenueTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+            app:layout_constraintTop_toBottomOf="@+id/tvSecondTeamName"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVenueTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Venue"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tvVenue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Kingsmead, Durban"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
